@@ -1,0 +1,61 @@
+<!-- Problem Statement:
+
+Write JavaScript code to display the movie details such as movie name, language, and ratings. Initialize the variables with values of appropriate types. Use template literals wherever necessary. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Details</title>
+    <style>
+        div#maincontent {
+            height: 135px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">Movie Details</div>
+        <div id="maincontent">
+            <script>
+                // <!-- Solution -->
+                //Write the code to display the movie details
+                let movie1 = {
+                    movieName : "Twilight",
+                    language : "English",
+                    ratings : 4.5
+            }
+                let movie2 = {
+                    movieName : "Twilight-Saga",
+                    language : "English",
+                    ratings : 3.5
+            }
+                document.write(`Movie: ${movie1['movieName']} <br> Language: ${movie1['language']} <br> Ratings: ${movie1['ratings']}`); // "document.write()"" to edit the HTML code in browser
+                document.write("<br>");
+                document.write("<br>");
+                document.write(`Movie: ${movie2['movieName']} <br> Language: ${movie2['language']} <br> Ratings: ${movie2['ratings']}`);
+            </script>
+        </div>
+    </center>
+</body>
+</html>
