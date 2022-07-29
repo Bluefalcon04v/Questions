@@ -13,12 +13,15 @@ This repositorie contains the Solutions of.
 - About **List DSA** (How to create a list in Python and Stores the data in it)  
 - About **List Methods DSA** (How to list methods works in Python) 
 - How to Create a list of all odd numbers between 1 and a max Input.
-- About Identifiers in js
+- About Identifiers in JavaScript
+- About DataTypes in JavaScript
+- About Operators in JavaScript
+- 
 ***
 
 ### Run locally
 Steps to run in your Machine
-> Run this Command `git clone https://github.com/Bluefalcon04v/Python_Practice.git`
+> Run this Command `git clone https://github.com/Bluefalcon04v/Questions.git`
 > 
 > Run `npm install` 
 > 
@@ -35,5 +38,6 @@ You are now in the dev environment and you can play around
 - HTML
 - CSS
 - JavaScript
+- DOM manipulation
 - DSA
 ***
