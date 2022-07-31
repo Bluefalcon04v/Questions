@@ -1,0 +1,100 @@
+<!-- Problem Statement:
+
+Write a JavaScript code to make online booking of theatre tickets and calculate the total price based on the below conditions:
+
+1) If seats to be booked are not more than 2, the cost per ticket remains $9.
+
+2) If seats are 5 or more, booking is not allowed.
+
+3) If seats to be booked are more than 2 but less than 5, based on the number of seats booked, do the following:
+
+        Calculate total cost by applying discounts of 5, 7, 9, 11 percent, and so on for customer 1,2,3 and 4.
+
+        Try the code with different values for the number of seats. -->
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Booking Details</title>
+            <style>
+                div#maincontent {
+                    height: 200px;
+                    width: 600px;
+                    border: 1px solid #CEE2FA;
+                    text-align: left;
+                    color: #08438E;
+                    font-family: calibri;
+                    font-size: 20;
+                    padding: 5px;
+                }
+                div#heading {
+                    text-decoration: bold;
+                    text-align: center;
+                    margin-top: 80px;
+                    width: 600px;
+                    border: 1px solid #CEE2FA;
+                    text-align: center;
+                    color: #08438E;
+                    background-color: #CEE2FA;
+                    font-family: calibri;
+                    font-size: 20;
+                    padding: 5px;
+                }
+                h4 {
+                    padding: 0;
+                    margin: 0;
+                }
+            </style>
+        </head>
+        <body>
+            <center>
+                <div id="heading">
+                    <b>Theatre Drama</b>
+                </div>
+                <div id="maincontent">
+                    <h4>Your Ticket Details:</h4>
+                    <br>
+                    <script>
+                        // Solving 1st and 2nd
+                        let seatsBooked = 5;
+                        switch (seatsBooked) {
+                            case 1:
+                                document.write(`Total Cost $9<br>`);
+                                break;
+                            case 2:
+                                document.write(`Total Cost $9<br>`);
+                                break;
+                            case 3: 
+                                document.write(`Total Cost $19<br>`);
+                                break;
+                        
+                            case 4:
+                                document.write(`Total Cost $29<br>`);
+                                break;
+                        
+                            default: if (seatsBooked >= 5) {
+                                    document.write(`Over booking not allowed, Please enter number of seats less than 5<br>`);
+                            }
+                                break;
+                        }
+                        // Solving 3rd
+                        // defining variables
+                        let tktPrice = 9, numTkt1 = 1, numTkt2 = 2,  numTkt3 = 3,  numTkt4 = 4;
+                        let customer1 = (tktPrice - (5/100 * tktPrice)); 
+                        let customer2 = (tktPrice - (7/100 * tktPrice)); 
+                        let customer3 = (tktPrice - (9/100 * tktPrice)); 
+                        let customer4 = (tktPrice - (11/100 * tktPrice)); 
+                        let total = (customer1 + customer2 + customer3 + customer4)
+                        // Write the code to display the total price and discounted price of tickets
+                        document.write(`Ticket for customer 1 gets 5% discount!, Number of tickets ${numTkt1}, Cost is: $${customer1} <br>`);
+                        document.write(`Ticket for customer 2 gets 7% discount!, Number of tickets ${numTkt2}, Cost is: $${customer2} <br>`);
+                        document.write(`Ticket for customer 3 gets 9% discount!, Number of tickets ${numTkt3}, Cost is: $${customer3} <br>`);
+                        document.write(`Ticket for customer 4 gets 11% discount!, Number of tickets ${numTkt4}, Cost is: $${customer4} <br>`);
+                        document.write(`For 4 Tickets, you need to pay: $${total}, instead of $${tktPrice*4} <br>`);
+                    </script>
+                </div>
+            </center>
+        </body>
+        </html>
+        
