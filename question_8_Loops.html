@@ -1,0 +1,98 @@
+<!-- Problem Statement:
+
+Write a JavaScript code to do online booking of theatre tickets and calculate the total price based on the below conditions:
+
+1st) If seats to be booked are not more than 2, the cost per ticket remains $9.  
+
+2nd) If seats are 6 or more, booking is not allowed.  
+
+3rd) If seats to be booked are more than 2 but less than 5, based on the number of seats booked, do the following: 
+
+        Calculate total cost by applying a discount of 5, 7, 9, 11 percent, and so on for customer 1,2,3 till 5.
+
+        Try the code with different values for the number of seats. 
+
+Implement the problem statement using 'for' loop, 'while' loop and 'do-while' loop.  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                //Write the code to display the ticket details
+                let numberOfSeats = 4;
+
+                for(i = 0; i < numberOfSeats; i++){
+                    // Solution of 1st question
+                    if(numberOfSeats <= 2){
+                        document.write(`${numberOfSeats} Seats booked, Total Price is: $${9 * numberOfSeats}<br>`)
+                        break;
+                    }
+                    
+                    else if(numberOfSeats >= 6){
+                        // Solution of 2nd question
+                        document.write(`Booking is not allowed for Seats 6 or more <br>`)
+                        break;
+                    }
+                    
+                    // Solution of 3rd question
+                    else{
+                        let discount = [5, 7, 9];
+                        if (numberOfSeats === 3) {
+                            document.write(`${numberOfSeats} Seats booked, Total price is:$${(9*numberOfSeats)-(9*numberOfSeats)/100 * discount[0]} <br>`);
+                            break;
+                        }
+                        else if(numberOfSeats === 4) {
+                            document.write(`${numberOfSeats} Seats booked, Total price is:$${(9*numberOfSeats)-(9*numberOfSeats)/100 * discount[1]} <br>`);
+                            break;
+                        }
+                        else{
+                            document.write(`${numberOfSeats} Seats booked, Total price is:$${(9*numberOfSeats)-(9*numberOfSeats)/100 * discount[2]} <br>`);
+                            break;
+                        }
+                    }
+                };
+            </script>
+        </div>
+    </center>
+</body>
+</html>
