@@ -16,7 +16,8 @@ This repositorie contains the Solutions of.
 - About Identifiers in JavaScript
 - About DataTypes in JavaScript
 - About Operators in JavaScript
-- 
+- About Statements and Expressions
+- About Loops
 ***
 
 ### Run locally
