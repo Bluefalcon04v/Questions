@@ -18,6 +18,7 @@ This repositorie contains the Solutions of.
 - About Operators in JavaScript
 - About Statements and Expressions
 - About Loops
+- About Classes
 ***
 
 ### Run locally
