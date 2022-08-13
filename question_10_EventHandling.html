@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 100px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="heading">
+          <h2>Booking Summary</h2>
+    </div>
+    <div id="maincontent">
+        <script>
+            //Write the code to display the discounted price on click of the text
+            document.write(`Costs per tickets: $9<br>`)
+            function price(booking,costPerTicket){    
+                document.write(`Total Number of Seats booked: ${booking}<br>`); 
+                    if(booking <= 2){
+                        document.write(`Total price: $${booking * costPerTicket}`);
+                    }
+                    else if(2 < booking || booking > 6){
+                        if(booking == 3){
+                            document.write(`Total price: $${booking * costPerTicket}<br>`);
+                            document.write(`Congratulations! ${booking} seats are eligible for discount.
+                            onclick = alert({booking*costPerTicket - (5/100) * booking * costPerTicket}`);
+                            // document.write(`Total price: $${booking*costPerTicket - ((5/100) * booking * costPerTicket)}`);
+                        }
+                        else if(booking == 4){
+                            document.write(`Total price: $${booking*costPerTicket - ((7/100) * booking * costPerTicket)}`);
+                        }
+                        else if(booking == 5){
+                            document.write(`Total price: $${booking*costPerTicket - ((9/100) * booking * costPerTicket)}`);
+                        }
+                }
+            }
+            price(3, 9);
+        </script>
+    </div>
+</body>
+ 
+</html>
