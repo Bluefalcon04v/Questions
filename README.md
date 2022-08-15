@@ -3,7 +3,7 @@
 ### Task
 Soving some questions of 
 - DSA
-- JS
+- JavaScript
 - Python
 
 ----
