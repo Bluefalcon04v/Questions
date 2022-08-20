@@ -20,6 +20,7 @@ This repositorie contains the Solutions of.
 - About Loops
 - About Classes
 - About Event Handling 
+- About Objects [needs modification]
 ***
 
 ### Run locally
