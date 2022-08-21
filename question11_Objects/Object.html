@@ -21,16 +21,18 @@ When the user clicks again, they should see a re-filled cone, a different headin
     <p id="p1" onclick="eat()">Click here to eat</p>
     <script>
         //Write the code here
+        let e = true
         function eat(){
             const body = document.querySelector('#body');
             const heading = document.getElementById('hdr1');
             const image1 = document.querySelector('#img1');
             const para = document.getElementById('p1');
-            if (e = true){
+            if (e == true){
                 body.style.backgroundColor = "#9af09a";
                 heading.innerText = "Hope you liked it!"
                 para.innerText = "Click to Re-fill!"
                 document.querySelector("#img1").src = ('/question11_Objects/image2.png');
+                e = false
             }
             
             else{
