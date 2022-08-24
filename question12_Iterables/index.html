@@ -1,0 +1,92 @@
+<!-- Problem Statement:
+
+Create an array of objects having movie details. The object should include the movie name, language, and ratings. Render the details of movies on the page using this array. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="margin-top:7%">
+        <center>
+            <h2>Your Favorite Movies!!</h2>
+        </center>
+    </div>
+    <div class="container" style="padding-top:5%">
+        <div class="row">
+            <div class="col-md-4">
+                <div style="text-align: center;">
+                    <img src="./images/FourSoldiers.jpg" width="200px" height="250px">
+                </div>
+                <div style="padding-top:10px;">
+                    <div style="text-align: center; ">
+                        <b><span id="mName0"></span></b></div>
+                    <div style="padding-top:10px;padding-left: 101px;"><b>Language: </b><span id="lang0"></span>
+                    </div>
+                    <div style="padding-left: 100px;"><b>Rating: </b><span id="rating0"></span></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="text-align: center;">
+                    <img src="./images/Tomorrowland.jpg" width="200px" height="250px">
+                </div>
+                <div style="padding-top:10px;">
+                    <div style="text-align: center; "><b><span id="mName1"></span></b></div>
+                    <div style="padding-top:10px;padding-left: 95px;"><b>Language: </b><span id="lang1"></span>
+                    </div>
+                    <div style="padding-left: 94px;"><b>Rating:</b><span id="rating1"></span></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="text-align: center;">
+                    <img src="./images/HungerGames.jpg" width="200px" height="250px">
+                </div>
+                <div style="padding-top:10px;">
+                    <div style="text-align: center; "><b><span id="mName2"></span></b></div>
+                    <div style="padding-top:10px;padding-left: 118px;"><b>Language: </b><span id="lang2"></span>
+                    </div>
+                    <div style="padding-left: 117px;"><b>Rating:</b><span id="rating2"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //Write the code here
+    const movieName0 = document.querySelector("#mName0");
+    const movieName1 = document.querySelector("#mName1");
+    const movieName2 = document.querySelector("#mName2");
+    const lang0 = document.querySelector("#lang0");
+    const lang1 = document.querySelector("#lang1");
+    const lang2 = document.querySelector("#lang2");
+    const rating0 = document.querySelector("#rating0");
+    const rating1 = document.querySelector("#rating1");
+    const rating2 = document.querySelector("#rating2");
+
+    let movieArray = ["The Four Soldiers", "Tomorrowland:A World Beyond", "The Hunger Games"];
+    for(let i = 0; i < movieArray.length; i++){
+        mName0.innerText = movieArray[0]
+        mName1.innerText = movieArray[1]
+        mName2.innerText = movieArray[2]
+    }
+    let langArray = ["English"];
+    for(let j = 0; j < 3; j++){
+        lang0.innerText = langArray
+        lang1.innerText = langArray
+        lang2.innerText = langArray
+    }
+    let ratingArray = [3.1, 3.2, 3.6];
+    for(let k = 0; k < 3; k++){
+        rating0.innerText = ratingArray[0]
+        rating1.innerText = ratingArray[1]
+        rating2.innerText = ratingArray[2]
+    }
+</script>
+</html>

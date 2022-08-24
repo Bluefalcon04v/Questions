@@ -20,7 +20,8 @@ This repositorie contains the Solutions of.
 - About Loops
 - About Classes
 - About Event Handling 
-- About Objects [needs modification]
+- About Objects 
+- About Iterables (Arrays)
 ***
 
 ### Run locally
