@@ -21,7 +21,7 @@ This repositorie contains the Solutions of.
 - About Classes
 - About Event Handling 
 - About Objects 
-- About Iterables (Arrays)
+- About Arrays Iterables 
 ***
 
 ### Run locally
