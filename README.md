@@ -2,7 +2,6 @@
 
 ### Task
 Soving some questions of 
-- DSA
 - JavaScript
 - Python
 
@@ -44,5 +43,4 @@ You are now in the dev environment and you can play around
 - CSS
 - JavaScript
 - DOM manipulation
-- DSA
 ***
